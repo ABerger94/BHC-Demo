@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Age Verification – BioDirect Health Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 0;
+    }
+
+    /* Full width logo */
+    .logo-full {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .checkpoint {
+      max-width: 600px;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .checkpoint h1 {
+      font-size: 2.5em;
+      color: #0B1D3A;
+      margin-bottom: 20px;
+    }
+
+    .checkpoint p {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: #0B1D3A;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background-color: #152e5a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-width logo -->
+  <img src="logo2.png" alt="BioDirect Logo" class="logo-full" />
+
+  <div class="checkpoint">
+    <h1>Age & Use Verification</h1>
+    <p>
+      By entering this site, you confirm that you are at least 18 years of age and understand that all products sold by BioDirect Health Club are intended strictly for laboratory research purposes only. These products are not for human consumption, medical, veterinary, or diagnostic use.
+    </p>
+    <a href="#" class="btn" onclick="verifyAge()">I Acknowledge & Enter</a>
+  </div>
+
+  <script>
+    function verifyAge() {
+      localStorage.setItem('ageVerified', 'true');
+      window.location.href = 'Homepage.html'; // update if needed
+    }
+  </script>
+
+</body>
+</html>

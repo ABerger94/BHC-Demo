@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TB-500 – BioDirect Health Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TB-500: 5mg lyophilized peptide, ≥98.9% purity, batch-tested. RUO only. Produced for research studies involving tissue recovery and healing." />
+ <meta name="keywords" content="RUO peptides, research peptides, BPC-157, TB-500, GLP-1, CJC-1295, Ipamorelin, RUO, SARMs, BioDirect, BioDirect Health Club">
+  <meta name="author" content="BioDirect Health Club" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #0B1D3A;
+    }
+
+    header {
+      background-color: #0B1D3A;
+      padding: 20px 30px 10px;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .header-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .site-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .menu-toggle {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .site-subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      color: #BDC3C7;
+      text-align: center;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    nav.desktop-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav.desktop-nav a:hover {
+      color: #BDC3C7;
+    }
+
+    .cart-icon {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cart-icon img {
+      height: 24px;
+      filter: invert(1);
+    }
+
+    .cart-count {
+      background-color: red;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 50%;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 100%;
+      right: 20px;
+      width: 200px;
+      border-radius: 4px;
+    }
+
+    .mobile-nav a {
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .mobile-nav a:hover {
+      background-color: #162a4d;
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 50px;
+      padding: 60px 20px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-image {
+      flex: 1;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .primary-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .carousel img {
+      height: 60px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.1);
+    }
+
+    .product-details {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .product-details h1 {
+      color: #0B1D3A;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0B1D3A;
+      margin: 20px 0;
+    }
+
+    button.buy {
+      background-color: #0B1D3A;
+      color: #fff;
+      font-size: 16px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    button.buy:hover {
+      background-color: #09162b;
+    }
+
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 2px solid #eee;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: bold;
+      color: #0B1D3A;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .tab:hover,
+    .tab.active {
+      border-bottom: 3px solid #0B1D3A;
+      background-color: #f8f8f8;
+    }
+
+    .tab-content {
+      display: none;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav.desktop-nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 15px;
+      }
+
+      .product-image,
+      .product-details {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .carousel {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-flex">
+      <div class="site-title">BioDirect Health Club</div>
+      <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+        <div></div><div></div><div></div>
+      </div>
+    </div>
+    <div class="site-subtitle">
+      Premium RUO Peptides. Verified Purity. Made in the USA.
+      <p class="subheading">Order Single Vials, Explore Research Stacks, or Join a Curated Monthly Subscription</p>
+    </div>
+    <nav class="desktop-nav">
+      <a href="Homepage.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="services.html">Services</a>
+      <a href="lookup.html">COA Lookup</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Contact</a>
+      <a href="checkout.html" class="cart-icon">
+        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart">
+        <span class="cart-count">0</span>
+      </a>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="Homepage.html">Home</a>
+      <a href="BHC_Products_Page.html">Products</a>
+      <a href="Stacks.html">Stacks</a>
+      <a href="services.html">Services</a>
+      <a href="lookup.html">COA Lookup</a>
+      <a href="about.html">About</a>
+      <a href="support.html">Contact</a>
+      <a href="checkout.html" class="cart-icon">
+        <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart" style="height: 20px;">
+        <span class="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <div class="product-image">
+      <img id="mainImage" src="TB-500.png" alt="TB-500 Vial" class="primary-image">
+      <div class="carousel">
+        <img src="TB-500.png" alt="TB-500 Vial" onclick="setMainImage(this)">
+        <img src="label-tb-front.jpeg" alt="Label Front" onclick="setMainImage(this)">
+        <img src="sample-coa.png" alt="Sample COA" onclick="setMainImage(this)">
+      </div>
+    </div>
+
+    <div class="product-details">
+      <h1>TB-500 – 5mg Lyophilized Peptide</h1>
+      <div class="price">$44.99</div>
+<button class="buy" 
+  data-id="tb500" 
+  data-name="TB-500 (5mg)" 
+  data-price="44.99">
+  Buy Now
+</button>
+
+      <div class="tabs">
+        <button class="tab active" onclick="showTab('overview')">Overview</button>
+        <button class="tab" onclick="showTab('coa')">COA</button>
+        <button class="tab" onclick="showTab('specs')">Specifications</button>
+        <button class="tab" onclick="showTab('faq')">FAQ</button>
+      </div>
+
+      <div id="overview" class="tab-content active">
+        <p><strong>TB-500</strong> is a synthetic peptide fragment of thymosin beta-4, studied for recovery, tissue repair, and cellular migration. Widely researched in models related to healing and inflammation modulation.</p>
+        <p>All BioDirect products are batch-tested for purity and consistency. RUO only — not for human or veterinary use.</p>
+      </div>
+
+      <div id="coa" class="tab-content">
+        <ul>
+          <li>Purity: ≥98.9% (HPLC)</li>
+          <li>Source: Synthetic fragment of thymosin β4</li>
+          <li>Solubility: Sterile water (pH 6–7)</li>
+          <li>Batch ID: TB5-2407-B</li>
+          <li>Storage: ≤25°C before reconstitution</li>
+        </ul>
+        <p>COA provided with each batch.</p>
+      </div>
+
+      <div id="specs" class="tab-content">
+        <p><strong>Format:</strong> Lyophilized powder<br>
+        <strong>Quantity:</strong> 5mg/vial<br>
+        <strong>Purity:</strong> ≥98.9%<br>
+        <strong>Additives:</strong> None<br>
+        <strong>Testing:</strong> HPLC + Mass Spec Verified</p>
+      </div>
+
+      <div id="faq" class="tab-content">
+        <p><strong>What is TB-500?</strong><br>It’s a synthetic peptide modeled after thymosin beta-4. Common in studies of recovery, wound healing, and inflammation.</p>
+        <p><strong>Storage?</strong><br>Store dry at room temp. Refrigerate post-reconstitution.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 BioDirect Health Club</p>
+    <p>*For Research Use Only. Not for human or veterinary use. This product is not a drug, food, or cosmetic.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+<script src="main.js"></script>
+</body>
+</html>

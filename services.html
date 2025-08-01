@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscriptions - BioDirect Health Club</title>
+
+  <!-- SEO & Meta -->
+  <meta name="description" content="BioDirect Health Club offers high-purity RUO peptides manufactured with precision and independently verified for quality. Shop premium research peptides online.">
+ <meta name="keywords" content="RUO peptides, research peptides, BPC-157, TB-500, GLP-1, CJC-1295, Ipamorelin, RUO, SARMs, BioDirect, BioDirect Health Club">
+  <meta name="author" content="BioDirect Health Club">
+  <meta property="og:title" content="BioDirect Health Club | Premium Research Peptides">
+  <meta property="og:description" content="Shop lab-tested RUO peptides with ≥98% purity.">
+  <meta property="og:image" content="https://www.biodirectlabs.com/og-image.jpg">
+  <meta property="og:url" content="https://www.biodirectlabs.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BioDirect Health Club | Premium Research Peptides">
+  <meta name="twitter:description" content="Lab-tested RUO peptides. Verified purity.">
+  <meta name="twitter:image" content="https://www.biodirectlabs.com/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #0B1D3A;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section ul {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: center;
+}
+
+    header {
+      background-color: #0B1D3A;
+      color: white;
+      padding: 20px 30px 10px;
+      text-align: center;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-title {
+      font-size: 1.8em;
+      margin: 0;
+      text-align: left;
+    }
+
+    .subheading {
+      font-size: 14px;
+      margin: 4px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav.desktop-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav.desktop-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: #0B1D3A;
+      position: absolute;
+      top: 151px;
+      right: 20px;
+      width: 200px;
+      border-radius: 4px;
+      z-index: 999;
+    }
+
+    .mobile-nav a {
+      padding: 12px 20px;
+      border-bottom: 1px solid #333;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .mobile-nav a:hover {
+      background-color: #162a4d;
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    .cart-button img {
+      height: 22px;
+      filter: invert(1);
+      margin-left: 8px;
+    }
+
+    .cart-count {
+      background: #C43B3B;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 50%;
+      margin-left: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      nav.desktop-nav {
+        display: none;
+      }
+    }
+
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .hero h1 {
+      color: #0B1D3A;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0B1D3A;
+      margin-bottom: 10px;
+    }
+
+    hr {
+      width: 60%;
+      margin: 20px auto 40px;
+      border: none;
+      border-top: 2px solid #0B1D3A;
+    }
+
+    .tiers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
+
+    .tier {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: left;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .tier h3 {
+      color: #0B1D3A;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .tier ul {
+      padding-left: 20px;
+      color: #444;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .tier ul li {
+      margin-bottom: 10px;
+    }
+
+    .tier button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #0B1D3A;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .tier button:hover {
+      background-color: #09162b;
+    }
+
+    footer {
+      border-top: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #0B1D3A;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+<header>
+  <div class="header-row">
+    <h1 class="header-title">BioDirect Health Club</h1>
+    <div class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('active')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <p class="subheading">Premium RUO Peptides – Lab-Tested, Lot-Tracked, Ready to Ship</p>
+  <p class="subheading">Order Single Vials, Explore Research Stacks, or Join a Curated Monthly Subscription</p>
+
+  <nav class="desktop-nav">
+    <a href="Homepage.html">Home</a>
+    <a href="BHC_Products_Page.html">Products</a>
+    <a href="Stacks.html">Stacks</a>
+    <a href="services.html">Services</a>
+    <a href="lookup.html">COA Lookup</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Contact</a>
+    <a href="checkout.html" class="cart-button">
+      <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart">
+      <span class="cart-count">0</span>
+    </a>
+  </nav>
+
+  <nav class="mobile-nav">
+    <a href="Homepage.html">Home</a>
+    <a href="BHC_Products_Page.html">Products</a>
+    <a href="Stacks.html">Stacks</a>
+    <a href="services.html">Services</a>
+    <a href="lookup.html">COA Lookup</a>
+    <a href="about.html">About</a>
+    <a href="support.html">Contact</a>
+    <a href="checkout.html" class="cart-button">
+      <img src="A9C547B6-5A7F-4C34-A3B3-6BF97E7F3853.jpeg" alt="Cart">
+      <span class="cart-count">0</span>
+    </a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1>Monthly Research Subscription Services</h1>
+    <p class="tagline">Your Molecules. Every Month. No Gaps.</p>
+    <hr>
+  </section>
+
+  <section class="tiers">
+    <div class="tier">
+      <h3>Basic – $89.99/mo</h3>
+      <ul>
+        <li>Choose any 1 RUO peptide (BPC-157, TB-500 or CJC-1295+Ipamorelin)</li>
+        <li>Printed COA (batch-verified)</li>
+        <li>Tamper-sealed vial</li>
+        <li>$5 flat-rate shipping</li>
+        <li>Priority access to restocks and limited-batch products</li>
+        <li>10% discount on additional à la carte vials</li>
+      </ul>
+      <button>Subscribe</button>
+    </div>
+    <div class="tier">
+      <h3>Plus – $129.99/mo</h3>
+      <ul>
+        <li>Choose any 2 RUO peptides (BPC-157, TB-500 or CJC-1295+Ipamorelin)</li>
+        <li>Digital COAs (batch-verified)</li>
+        <li>Free cold-pack shipping</li>
+        <li>Subscriber-only access to new RUO peptides</li>
+        <li>Exclusive educational briefings (e.g., research summaries, etc.)</li>
+      </ul>
+      <button>Subscribe</button>
+    </div>
+    <div class="tier">
+      <h3>Pro – $199.99/mo</h3>
+      <ul>
+        <li>Includes all 3 RUO peptides (BPC-157, TB-500 and CJC-1295+Ipamorelin)</li>
+        <li>Printed and digital COAs (batch verified)</li>
+        <li>Batch and lot # tracking</li>
+        <li>Expedited cold-chain shipping</li>
+        <li>VIP early access to upcoming molecules (e.g., CJC-1295, Epitalon)</li>
+        <li>Dedicated premium support</li>
+      </ul>
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+<footer>
+    <p>© 2025 BioDirect Health Club</p>
+<br>
+<p>*For Research Use Only.
+Not for human or veterinary use. This product is not a drug, food, or cosmetic.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
