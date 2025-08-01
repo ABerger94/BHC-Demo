@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://biodirectlabs.netlify.app/</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/Homepage.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/BHC_Products_Page.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/Stacks.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/services.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/about.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/support.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/lookup.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/checkout.html</loc>
+  </url>
+
+  <!-- Product Pages -->
+  <url>
+    <loc>https://biodirectlabs.netlify.app/BPC157_Page.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/TB500_page.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/Remvata.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/cjc-ipa.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/Bac_water.html</loc>
+  </url>
+
+  <!-- Stack Pages -->
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-recovery.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-metabolic.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-advanced.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/stack-ultimate.html</loc>
+  </url>
+
+  <!-- Subscription Pages -->
+  <url>
+    <loc>https://biodirectlabs.netlify.app/subscribe-basic.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/subscribe-plus.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/subscribe-pro.html</loc>
+  </url>
+
+  <!-- Legal -->
+  <url>
+    <loc>https://biodirectlabs.netlify.app/terms.html</loc>
+  </url>
+  <url>
+    <loc>https://biodirectlabs.netlify.app/privacy.html</loc>
+  </url>
+
+</urlset>
