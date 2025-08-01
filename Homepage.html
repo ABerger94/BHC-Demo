@@ -266,15 +266,23 @@
       background-color: #182c54;
     }
 
-    .coming-soon {
-      background-color: #BDC3C7;
-      color: #0B1D3A;
+    .buy {
+      display: inline-block;
+      background-color: #0B1D3A;
+      color: #ffffff;
       font-weight: 600;
-      font-size: 16px;
+      padding: 12px 20px;
       text-align: center;
-      padding: 12px;
-      border-radius: 8px;
-      margin-top: auto;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .buy:hover {
+      background-color: #182c54;
     }
   </style>
 </head>
@@ -345,14 +353,14 @@
         <p>5mg thymosin beta‑4 fragment for wound healing studies.</p>
       </div>
       <div class="card">
-        <a href="Remvata.html"><img src="GLP-1.png" alt="GLP‑1 Analog Vial"></a>
-        <h3>GLP‑1 Analog</h3>
-        <p>5mg GLP‑1 analog peptide for metabolic research.</p>
-      </div>
-      <div class="card">
         <a href="cjc-ipa.html"><img src="cjc-ipa.jpeg" alt="CJC-1295 + Ipamorelin"></a>
         <h3>CJC‑1295 + Ipamorelin</h3>
         <p>Dual GHRH + GHRP combo for GH-related studies.</p>
+      </div>
+ <div class="card">
+        <a href="Remvata.html"><img src="GLP-1.png" alt="GLP‑1 Analog Vial"></a>
+        <h3>GLP‑1 Analog</h3>
+        <p>5mg GLP‑1 analog peptide for metabolic research.</p>
       </div>
     </div>
     <a href="BHC_Products_Page.html" class="btn">View All Products</a>
@@ -398,18 +406,18 @@
       <div class="card">
         <h3>Basic Tier</h3>
         <p>✓ Choose any 1 RUO peptide (BPC-157, TB-500 or <br>CJC-1295+Ipamorelin)<br>✓ $5 flat-rate shipping<br>✓ 10% discount on additional à la carte vials</p>
-        <div class="coming-soon">Coming Soon</div>
+<button class="buy" onclick="window.location.href='subscribe-basic.html'">Subscribe</button>
       </div>
       <div class="card">
         <h3>Plus Tier</h3>
         <p>✓ Choose any 2 RUO peptide (BPC-157, TB-500 or <br>CJC-1295+Ipamorelin)<br>✓ Digital COAs (batch-verified)<br>✓ Subscriber-only access to new RUO peptides<br>✓ 15% discount on additional à la carte vials</p>
-        <div class="coming-soon">Coming Soon</div>
+<button class="buy" onclick="window.location.href='subscribe-plus.html'">Subscribe</button>
       </div>
       <div class="card">
         <h3>Pro Tier</h3>
         <p>✓ Includes all 3 RUO peptides (BPC-157, TB-500 and <br>CJC-1295+Ipamorelin)<br>✓ Expedited cold-chain shipping<br>✓ VIP early access to upcoming molecules (e.g., MOTS-c, Epitalon)
 <br>✓ Dedicated Support</p>
-        <div class="coming-soon">Coming Soon</div>
+<button class="buy" onclick="window.location.href='subscribe-pro.html'">Subscribe</button>
       </div>
     </div>
   </section>
